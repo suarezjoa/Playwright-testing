@@ -25,7 +25,7 @@ test('has title', async ({page}) => {
 
   await expect(page).toHaveURL('https://sistemacuenca.ucp.edu.ar/alumnosnotas/Proteccion/AsistenciaVirtual.aspx?Sel=1');
 
-  await page.getByRole('row', { name: 'Análisis Numérico - A Submit', exact: true }).getByRole('button', { name: 'Submit' }).click();
+  await page.getByRole('row', { name: 'Ingeniería de Software II - A Submit', exact: true }).getByRole('button', { name: 'Submit' }).click();
 
   await expect(page.getByText('No está habilitado el registro de asistencia para esta comisión')).toBeVisible();
 
